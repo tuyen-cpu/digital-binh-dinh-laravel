@@ -1,0 +1,63 @@
+<?php
+
+use App\Http\Controllers\AnalyticsController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\LocationController;
+use App\Http\Controllers\MediaController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\SiteConfigController;
+use App\Http\Controllers\TravelController;
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
+Route::post('auth/register', [AuthController::class, 'register'])->middleware('throttle:20,1');
+Route::post('auth/login', [AuthController::class, 'login'])->middleware('throttle:20,1');
+Route::get('categories', [CategoryController::class, 'index']);
+Route::get('categories/{key}', [CategoryController::class, 'show']);
+Route::get('locations', [LocationController::class, 'index']);
+Route::get('locations/{id}/reviews', [ReviewController::class, 'locationIndex']);
+Route::get('locations/{id}', [LocationController::class, 'show']);
+Route::get('site-config', [SiteConfigController::class, 'show']);
+Route::post('analytics/events', [AnalyticsController::class, 'store'])->middleware('throttle:120,1');
+
+Route::middleware('jwt')->group(function () {
+    Route::post('auth/logout', [AuthController::class, 'logout']);
+    Route::get('auth/me', [AuthController::class, 'me']);
+    Route::match(['put', 'patch'], 'auth/profile', [AuthController::class, 'profile']);
+    Route::post('auth/change-password', [AuthController::class, 'changePassword']);
+    Route::get('admin/users', [UserController::class, 'index']);
+    Route::put('admin/users/{username}', [UserController::class, 'update']);
+    Route::delete('admin/users/{username}', [UserController::class, 'destroy']);
+    Route::post('admin/users/{username}/reset-password', [UserController::class, 'resetPassword']);
+    Route::post('categories', [CategoryController::class, 'store']);
+    Route::post('categories/seed', [CategoryController::class, 'seed']);
+    Route::match(['put', 'patch'], 'categories/{key}', [CategoryController::class, 'update']);
+    Route::delete('categories/{key}', [CategoryController::class, 'destroy']);
+    Route::post('locations', [LocationController::class, 'store']);
+    Route::post('locations/import', [LocationController::class, 'import']);
+    Route::post('locations/reset', [LocationController::class, 'reset']);
+    Route::match(['put', 'patch'], 'locations/{id}', [LocationController::class, 'update']);
+    Route::delete('locations/{id}', [LocationController::class, 'destroy']);
+    Route::get('reviews', [ReviewController::class, 'index']);
+    Route::post('locations/{id}/reviews', [ReviewController::class, 'store']);
+    Route::delete('reviews/{id}', [ReviewController::class, 'destroy']);
+    Route::post('reviews/{id}/replies', [ReviewController::class, 'reply']);
+    Route::delete('reviews/{id}/replies/{reply}', [ReviewController::class, 'destroyReply']);
+    Route::get('favorites', [TravelController::class, 'favorites']);
+    Route::post('favorites/toggle', [TravelController::class, 'toggle']);
+    Route::get('travel/history', [TravelController::class, 'history']);
+    Route::post('travel/history', [TravelController::class, 'record']);
+    Route::delete('travel/history/{id}', [TravelController::class, 'destroyHistory']);
+    Route::get('travel/reminders', [TravelController::class, 'reminders']);
+    Route::post('travel/reminders', [TravelController::class, 'createReminder']);
+    Route::patch('travel/reminders/{id}', [TravelController::class, 'updateReminder']);
+    Route::delete('travel/reminders/{id}', [TravelController::class, 'destroyReminder']);
+    Route::get('analytics/events', [AnalyticsController::class, 'index']);
+    Route::delete('analytics/events', [AnalyticsController::class, 'destroy']);
+    Route::match(['put', 'patch'], 'site-config', [SiteConfigController::class, 'update']);
+    Route::post('site-config/reset', [SiteConfigController::class, 'reset']);
+    Route::post('media/upload', [MediaController::class, 'upload']);
+    Route::post('media/discard', [MediaController::class, 'discard']);
+    Route::post('media/delete', [MediaController::class, 'destroy']);
+});

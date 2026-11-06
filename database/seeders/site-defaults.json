@@ -1,0 +1,33 @@
+{
+  "hero_slides": [
+    {
+      "id": "le-hong-phong",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C4%90%C6%B0%E1%BB%9Dng%20L%C3%AA%20H%E1%BB%93ng%20Phong%2C%20Ph%C6%B0%E1%BB%9Dng%20B%C3%ACnh%20%C4%90%E1%BB%8Bnh%2C%20th%E1%BB%8B%20x%C3%A3%20An%20Nh%C6%A1n%2C%20t%E1%BB%89nh%20B%C3%ACnh%20%C4%90%E1%BB%8Bnh.JPG?width=1920",
+      "title": "Nhịp sống Phường Bình Định",
+      "caption": "Không gian đô thị trên trục Lê Hồng Phong."
+    },
+    {
+      "id": "cua-dong",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/C%E1%BB%95ng%20ch%C3%A0o%20th%E1%BB%8B%20x%C3%A3%20An%20Nh%C6%A1n.jpg?width=1920",
+      "title": "Dấu ấn Thành Bình Định",
+      "caption": "Không gian lịch sử gắn với vùng An Nhơn - Bình Định."
+    },
+    {
+      "id": "thanh-hoang-de",
+      "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/C%E1%BB%95ng%20ch%C3%ADnh%20t%E1%BB%AD%20c%E1%BA%A5m%20th%C3%A0nh%2C%20th%C3%A0nh%20Ho%C3%A0ng%20%C4%90%E1%BA%BF.JPG?width=1920",
+      "title": "Không gian di sản An Nhơn",
+      "caption": "Hình ảnh thực tế khu vực An Nhơn dùng làm ảnh minh họa."
+    }
+  ],
+  "hero_interval_ms": 5200,
+  "footer": {
+    "orgName": "BÌNH ĐỊNH",
+    "description": "Khám phá điểm đến, ẩm thực, lưu trú và tiện ích trong Phường Bình Định trên một bản đồ số thống nhất.",
+    "address": "78 Lê Hồng Phong, phường Bình Định, tỉnh Gia Lai",
+    "phone": "0914.1178.00",
+    "email": "datnt.bdh@vnpt.vn",
+    "workingHours": "Thứ Hai – Thứ Sáu · 07:30–17:00",
+    "copyright": "© 2026 · Bản đồ du lịch số Phường Bình Định",
+    "logoUrl": ""
+  }
+}

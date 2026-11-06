@@ -1,0 +1,233 @@
+[
+  {
+    "key": "tourism",
+    "label": "Khu/điểm du lịch",
+    "short_label": "Du lịch",
+    "emoji": "🏛️",
+    "marker": "#1d4ed8",
+    "order": 1,
+    "description": "Di tích, danh thắng, không gian văn hóa, tâm linh và các điểm tham quan.",
+    "suggested_groups": [
+      "Di tích lịch sử / khảo cổ",
+      "Văn hóa / du lịch / tâm linh",
+      "Điểm tham quan",
+      "Làng nghề / trải nghiệm"
+    ],
+    "suggested_subgroups": [
+      "Di tích lịch sử",
+      "Lịch sử - kiến trúc",
+      "Chùa",
+      "Đình làng",
+      "Miếu",
+      "Tâm linh",
+      "Làng nghề / trải nghiệm",
+      "Làng võ / trải nghiệm",
+      "Nhà văn hóa",
+      "Điểm tham quan đô thị"
+    ],
+    "suggested_keywords": [
+      "lịch sử",
+      "kiến trúc",
+      "di tích",
+      "tâm linh",
+      "văn hóa",
+      "tham quan",
+      "làng nghề",
+      "võ cổ truyền"
+    ]
+  },
+  {
+    "key": "lodging",
+    "label": "Lưu trú du lịch",
+    "short_label": "Lưu trú",
+    "emoji": "🛏️",
+    "marker": "#2563eb",
+    "order": 2,
+    "description": "Khách sạn, nhà nghỉ và cơ sở lưu trú phục vụ du khách.",
+    "suggested_groups": [
+      "Lưu trú du lịch"
+    ],
+    "suggested_subgroups": [
+      "Khách sạn",
+      "Nhà nghỉ",
+      "Khách sạn / nhà nghỉ",
+      "Homestay"
+    ],
+    "suggested_keywords": [
+      "lưu trú",
+      "khách sạn",
+      "nhà nghỉ",
+      "homestay"
+    ]
+  },
+  {
+    "key": "food",
+    "label": "Ẩm thực",
+    "short_label": "Ẩm thực",
+    "emoji": "🍜",
+    "marker": "#0284c7",
+    "order": 3,
+    "description": "Nhà hàng, quán ăn, cà phê, trà sữa và các địa chỉ ẩm thực địa phương.",
+    "suggested_groups": [
+      "Ẩm thực / nhà hàng / cafe",
+      "Ẩm thực / đồ uống"
+    ],
+    "suggested_subgroups": [
+      "Nhà hàng",
+      "Quán ăn",
+      "Cafe",
+      "Trà sữa",
+      "Bánh xèo",
+      "Bún bò",
+      "Phở",
+      "Cơm gia đình",
+      "Hải sản / ốc",
+      "Lẩu nướng",
+      "Đặc sản / cơ sở sản xuất"
+    ],
+    "suggested_keywords": [
+      "ẩm thực",
+      "quán ăn",
+      "nhà hàng",
+      "cafe",
+      "trà sữa",
+      "đặc sản",
+      "ăn sáng",
+      "ăn tối"
+    ]
+  },
+  {
+    "key": "entertainment",
+    "label": "Giải trí",
+    "short_label": "Giải trí",
+    "emoji": "🎯",
+    "marker": "#0369a1",
+    "order": 4,
+    "description": "Công viên, thể thao, karaoke và các điểm vui chơi giải trí.",
+    "suggested_groups": [
+      "Vui chơi / thể thao",
+      "Giải trí"
+    ],
+    "suggested_subgroups": [
+      "Công viên",
+      "Karaoke",
+      "Gym",
+      "Billiards",
+      "Sân bóng / cafe",
+      "Sân vận động",
+      "Công viên giải trí",
+      "Trẻ em"
+    ],
+    "suggested_keywords": [
+      "giải trí",
+      "thể thao",
+      "công viên",
+      "karaoke",
+      "gym",
+      "trẻ em"
+    ]
+  },
+  {
+    "key": "health",
+    "label": "Chăm sóc sức khỏe",
+    "short_label": "Sức khỏe",
+    "emoji": "💙",
+    "marker": "#0e7490",
+    "order": 5,
+    "description": "Trạm y tế, phòng khám, nhà thuốc và dịch vụ chăm sóc sức khỏe.",
+    "suggested_groups": [
+      "Y tế / chăm sóc sức khỏe"
+    ],
+    "suggested_subgroups": [
+      "Trạm y tế",
+      "Phòng khám",
+      "Nhà thuốc",
+      "Nha khoa"
+    ],
+    "suggested_keywords": [
+      "y tế",
+      "sức khỏe",
+      "phòng khám",
+      "nhà thuốc",
+      "nha khoa"
+    ]
+  },
+  {
+    "key": "administration",
+    "label": "Cơ quan hành chính",
+    "short_label": "Hành chính",
+    "emoji": "🏢",
+    "marker": "#1e40af",
+    "order": 6,
+    "description": "UBND, Công an, Trung tâm hành chính công, Đảng ủy và các cơ quan phường.",
+    "suggested_groups": [
+      "Cơ quan hành chính",
+      "Cơ quan hành chính / dịch vụ công",
+      "Cơ quan hành chính / an ninh",
+      "Cơ quan hành chính / quốc phòng",
+      "Cơ quan chuyên môn",
+      "Đơn vị sự nghiệp công"
+    ],
+    "suggested_subgroups": [
+      "Ủy ban nhân dân phường",
+      "Công an phường",
+      "Trung tâm Phục vụ hành chính công",
+      "Đảng",
+      "Ban Chỉ huy Quân sự",
+      "Văn phòng HĐND và UBND",
+      "Văn hóa - Xã hội",
+      "Dịch vụ sự nghiệp công"
+    ],
+    "suggested_keywords": [
+      "UBND",
+      "Công an",
+      "hành chính",
+      "dịch vụ công",
+      "an ninh",
+      "quốc phòng",
+      "chính quyền"
+    ]
+  },
+  {
+    "key": "utility",
+    "label": "Tiện ích",
+    "short_label": "Tiện ích",
+    "emoji": "📍",
+    "marker": "#1e3a8a",
+    "order": 7,
+    "description": "Ngân hàng, chợ, trường học, bưu chính, điện và các dịch vụ thiết yếu.",
+    "suggested_groups": [
+      "Ngân hàng / ATM",
+      "Mua sắm / chợ / siêu thị",
+      "Bưu chính / viễn thông / điện / nhiên liệu",
+      "Giáo dục"
+    ],
+    "suggested_subgroups": [
+      "Ngân hàng",
+      "ATM",
+      "Chợ",
+      "Siêu thị",
+      "Siêu thị mini",
+      "Cửa hàng tiện lợi",
+      "Bưu chính",
+      "Xăng dầu",
+      "Điện lực",
+      "Viễn thông",
+      "Mầm non công lập",
+      "Tiểu học công lập",
+      "THCS công lập",
+      "THPT"
+    ],
+    "suggested_keywords": [
+      "ngân hàng",
+      "ATM",
+      "chợ",
+      "siêu thị",
+      "bưu chính",
+      "điện lực",
+      "viễn thông",
+      "giáo dục",
+      "trường học"
+    ]
+  }
+]
